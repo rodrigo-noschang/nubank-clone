@@ -7,7 +7,7 @@ export const PageContainer = styled.View`
     padding: 20px 0 40px;
 `;
 
-export const ContentContainer = styled.View`
+export const AccountContainer = styled.View`
     position: relative;
     flex: 1;
     margin: 20px 0;

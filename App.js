@@ -1,11 +1,12 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 
-import { PageContainer, ContentContainer } from './AppStyle';
+import { PageContainer, AccountContainer } from './AppStyle';
 
 import { Header } from './src/components/Header';
 import { Account } from './src/components/Account';
 import { Tabs } from './src/components/Tabs';
+import { Support } from './src/components/Suport';
 
 export default function App() {
   return (
@@ -13,9 +14,10 @@ export default function App() {
       <StatusBar style = 'light' backgroundColor='#8B10AE'/>
       <Header />
 
-      <ContentContainer>
+      <AccountContainer>
         <Account/>
-      </ContentContainer>
+        <Support />
+      </AccountContainer>
 
       <Tabs />
     </PageContainer>
