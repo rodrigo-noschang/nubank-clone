@@ -1,15 +1,14 @@
 import styled from 'styled-components/native';
+import { StyleSheet } from 'react-native';
 
-export const TabsContainer = styled.View`
-    margin-top: 15px;
-`;
+export const TabsContainer = styled.View``;
 
 export const TabsScroll = styled.ScrollView.attrs({
     horizontal: true,
     contentContainerStyle: {
         paddingLeft: 10,
         paddingRight: 20,
-        paddingVertical: 10
+        paddingVertical: 15
     },
     showsHorizontalScrollIndicator: false
 })``;

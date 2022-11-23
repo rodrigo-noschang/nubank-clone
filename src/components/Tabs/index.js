@@ -1,6 +1,10 @@
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
-import { TabsContainer, TabsScroll, TabItemContainer, TabIcon, TabText } from "./style"
+import { TabsContainer, 
+    TabsScroll, 
+    TabItemContainer, 
+    TabIcon, 
+    TabText } from "./style"
 
 export const Tabs = () => {
 
