@@ -6,10 +6,23 @@ import { TabsContainer,
     TabIcon, 
     TabText } from "./style"
 
-export const Tabs = () => {
+export const Tabs = ({ translateY }) => {
 
     return (
-        <TabsContainer>
+        <TabsContainer style = {{
+            opacity: translateY.interpolate({
+                inputRange: [0, 350],
+                outputRange: [1, 0.3],
+                extrapolate: 'clamp'
+            }),
+            transform: [{
+                translateY: translateY.interpolate({
+                    inputRange: [0, 350],
+                    outputRange: [0, 20],
+                    extrapolate: 'clamp'
+                })
+            }]
+        }}>
             <TabsScroll>
                 <TabItemContainer>
                     <TabIcon>

@@ -3,9 +3,15 @@ import Icon from 'react-native-vector-icons/FontAwesome5';
 
 import { SupportContainer, QRCodeContainer, SupportListContainer, SupportItemContainer, SupportItemText, CloseAppButton, CloseAppButtonText } from "./style";
 
-export const Support = () => {
+export const Support = ({ translateY }) => {
     return(
-        <SupportContainer>
+        <SupportContainer style = {{
+            opacity: translateY.interpolate({
+                inputRange: [0, 350],
+                outputRange: [0, 1],
+                extrapolate: 'clamp'
+            })
+        }}>
             <QRCodeContainer>
                 <QRCode 
                     value='https://youtube.com'

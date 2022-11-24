@@ -1,7 +1,8 @@
+import { Animated } from "react-native";
 import styled from "styled-components/native";
 import { StyleSheet } from "react-native";
 
-export const SupportContainer = styled.View`
+export const SupportContainer = styled(Animated.View)`
     margin-top: 15px;
 `;
 

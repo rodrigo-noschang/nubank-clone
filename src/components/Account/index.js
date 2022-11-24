@@ -14,7 +14,6 @@ import { AccountContainer,
 
 export const Account = ({ translateY}) => {
     let offset = 0;
-    // const translateY = new Animated.Value(0);
 
     const animatedEvent = Animated.event([
         {

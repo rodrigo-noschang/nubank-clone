@@ -21,10 +21,10 @@ export default function App() {
 
         <AccountContainer> 
           <Account translateY = {translateY}/>
-          <Support />
+          <Support translateY = {translateY}/>
         </AccountContainer>
 
-        <Tabs />
+        <Tabs translateY = {translateY}/>
       </PageContainer>
     </GestureHandlerRootView>
   );
