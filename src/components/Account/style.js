@@ -1,6 +1,7 @@
+import { Animated } from "react-native";
 import styled from "styled-components/native";
 
-export const AccountContainer = styled.View`
+export const AccountContainer = styled(Animated.View)`
     background-color: #fff;
     border-radius: 5px;
     flex: 1;
